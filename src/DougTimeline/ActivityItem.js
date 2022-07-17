@@ -6,6 +6,7 @@ class ActivityItem extends React.Component {
       <div className="item">
         <div className="avatar">
           <img alt={activity.text} src={activity.user.avatar} />
+          {activity.user.name}
         </div>
         <span className="time">{activity.timestamp}</span>
         <p>{activity.text}</p>
